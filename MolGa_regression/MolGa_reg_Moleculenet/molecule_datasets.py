@@ -911,15 +911,12 @@ def _load_qm9_dataset(input_path):
     input_df = pd.read_csv(input_path)
     smiles_list = input_df['smiles']
 
-    # 将 SMILES 转换为 RDKit Mol 对象
     rdkit_mol_objs_list = [Chem.MolFromSmiles(s) for s in smiles_list]
 
-    # 预处理分子对象和 SMILES（若 Mol 为 None，则跳过）
     preprocessed_rdkit_mol_objs_list = [mol if mol is not None else None for mol in rdkit_mol_objs_list]
     preprocessed_smiles_list = [Chem.MolToSmiles(mol) if mol is not None else None
                                 for mol in preprocessed_rdkit_mol_objs_list]
 
-    # 提取分子属性标签（假设从第二列开始）
     tasks = ['mu', 'alpha', 'homo', 'lumo', 'gap']
     labels = input_df[tasks].astype(np.float32).values
 
@@ -936,15 +933,12 @@ def _load_qm8_dataset(input_path):
     input_df = pd.read_csv(input_path)
     smiles_list = input_df['smiles']
 
-    # 将 SMILES 转换为 RDKit Mol 对象
     rdkit_mol_objs_list = [Chem.MolFromSmiles(s) for s in smiles_list]
 
-    # 预处理分子对象和 SMILES（若 Mol 为 None，则跳过）
     preprocessed_rdkit_mol_objs_list = [mol if mol is not None else None for mol in rdkit_mol_objs_list]
     preprocessed_smiles_list = [Chem.MolToSmiles(mol) if mol is not None else None
                                 for mol in preprocessed_rdkit_mol_objs_list]
 
-    # 提取分子属性标签（假设从第二列开始）
     tasks = ['E1-CC2','E2-CC2','f1-CC2','f2-CC2','E1-PBE0','E2-PBE0','f1-PBE0','f2-PBE0','E1-CAM','E2-CAM','f1-CAM','f2-CAM']
 
     labels = input_df[tasks]
