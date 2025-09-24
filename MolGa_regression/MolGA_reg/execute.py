@@ -68,7 +68,7 @@ import GCL.losses as L
 import GCL.augmentors as A
 from GCL.eval import get_split, SVMEvaluator
 from GCL.models import DualBranchContrast
-batch_size = 21000
+batch_size = 25000
 nb_epochs = 20000
 patience = 50
 lr = 0.00001
