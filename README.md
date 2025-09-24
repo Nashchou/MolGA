@@ -9,8 +9,9 @@ We provide the code (in pytorch) and datasets for our paper
 
 The repository is organised as follows:
 
-- **MolGa_classification/**: implements pre-training and downstream classification tasks .
-- **MolGa_regression/**: implements pre-training and downstream molecular property tasks.
+- **MolGa_classification/**: implements pre-training and downstream molecular classification.
+- **MolGa_regression/**: implements pre-training and downstream molecular property prediction.
+- **data.zip**: contains *Lipophilicity* and *BBBP*  in the quick-start examples. Due to storage limitations on Anonymous GitHub, other datasets are not included in this release. We will make the remaining datasets publicly available upon publication.
 
 ## Package Dependencies
 
@@ -21,9 +22,9 @@ The repository is organised as follows:
 
 ## Running experiments
 
-### Regression for MoleculeNet dataset
+### Molecular property prediction for MoleculeNet dataset
 
-Default dataset is lipophilicity. You need to change the corresponding parameters in *execute.py* to train and evaluate on other datasets. 
+Default dataset is *lipophilicity*. You need to change the corresponding parameters in *execute.py* to train and evaluate on other datasets. 
 
 Pretrain and downstream test are in the same file, You can find a pretrain flag to control whether pretrain or not.
 
@@ -35,9 +36,9 @@ In the folder "MolGa_regression/MolGA_reg", run:
 
 - python execute.py
 
-### Regression for QM9 and MD17
+### Molecular property prediction for QM9 and MD17
 
-Default dataset is MD17. You need to change the corresponding parameters in *execute.py* to train and evaluate on other datasets. 
+Default dataset is *MD17*. You need to change the corresponding parameters in *execute.py* to train and evaluate on other datasets. 
 
 Pretrain and downstream test are in the same file, You can find a pretrain flag to control whether pretrain or not.
 
@@ -50,9 +51,9 @@ In the folder "MolGa_regression/MolGa_reg_Moleculenet", run:
 - python execute.py
 
 
-### Classification
+### Molecular classification
 
-Default dataset is BBBP. You need to change the corresponding parameters in *execute.py* to train and evaluate on other datasets.
+Default dataset is *BBBP*. You need to change the corresponding parameters in *execute.py* to train and evaluate on other datasets.
 
 Pretrain and downstream test are in the same file, You can find a pretrain flag to control whether pretrain or not.
 
