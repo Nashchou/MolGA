@@ -71,7 +71,7 @@ import GCL.augmentors as A
 
 import matplotlib.pyplot as plt
 
-batch_size = 21000
+batch_size = 25000
 nb_epochs = 20000
 patience = 50
 lr = 0.00001
