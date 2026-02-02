@@ -13,6 +13,25 @@ The repository is organised as follows:
 - **MolGA_regression/**: implements pre-training and downstream molecular property prediction.
 - **data.zip**: contains *Lipophilicity* and *BBBP*  in the quick-start examples. Due to storage limitations on Anonymous GitHub, other datasets are not included in this release. We will make the remaining datasets publicly available upon publication.
 
+## Datasets
+
+We use the following datasets in our experiments (direct download links):
+
+### MoleculeNet (DeepChem)
+- BBBP: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/BBBP.csv  
+- SIDER: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/sider.csv.gz  
+- ClinTox: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/clintox.csv.gz  
+- MUV: https://s3-us-west-1.amazonaws.com/deepchem.io/datasets/muv.csv.gz  
+- BACE: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/bace.csv  
+- ESOL: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/delaney-processed.csv  
+- Lipophilicity: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/Lipophilicity.csv  
+- FreeSolv: https://s3-us-west-1.amazonaws.com/deepchem.io/datasets/molnet_publish/FreeSolv.zip  
+
+### Quantum chemistry / dynamics
+- QM8: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/gdb8.tar.gz  
+- QM9: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/gdb9.tar.gz  
+- MD17-aspirin: http://quantum-machine.org/gdml/data/npz/md17_aspirin.npz
+- 
 ## Package Dependencies
 
 * python 3.8
@@ -64,3 +83,4 @@ IF_PRETRAIN = 0
 In the folder "MolGA_classification", run:
 
 - python execute.py
+
