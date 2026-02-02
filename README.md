@@ -31,7 +31,7 @@ We use the following datasets in our experiments (direct download links):
 - QM8: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/gdb8.tar.gz  
 - QM9: http://deepchem.io.s3-website-us-west-1.amazonaws.com/datasets/gdb9.tar.gz  
 - MD17-aspirin: http://quantum-machine.org/gdml/data/npz/md17_aspirin.npz
-- 
+
 ## Package Dependencies
 
 * python 3.8
@@ -83,4 +83,5 @@ IF_PRETRAIN = 0
 In the folder "MolGA_classification", run:
 
 - python execute.py
+
 
